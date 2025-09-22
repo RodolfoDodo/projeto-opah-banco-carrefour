@@ -1,0 +1,217 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-22T04:12:08.937Z",
+    "end": "2025-09-22T04:15:02.954Z",
+    "duration": 174017,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "59aad627-e7cf-459b-bb9f-5b7a8adf01d2",
+      "title": "",
+      "fullFile": "/home/usuario/projeto/login_test.js",
+      "file": "/login_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+          "title": "login",
+          "fullFile": "/home/usuario/projeto/login_test.js",
+          "file": "/login_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"login\"",
+              "fullTitle": "login \"before all\" hook: codeceptjs.beforeSuite in \"login\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "suiteSetup(suite)",
+              "err": {},
+              "uuid": "fa123e4f-d6f2-4ca2-bf5f-0745d1e14ba9",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"login\"",
+              "fullTitle": "login \"before each\" hook: codeceptjs.before in \"login\"",
+              "timedOut": false,
+              "duration": 29190,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "setup(suite)",
+              "err": {},
+              "uuid": "6c8fc9b0-dfa0-424d-8b84-1da1250c04ad",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"login\"",
+              "fullTitle": "login \"after all\" hook: codeceptjs.afterSuite in \"login\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "suiteTeardown(suite)",
+              "err": {},
+              "uuid": "ec7e7a84-3dc3-4fbd-83a5-89977f571611",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"login\"",
+              "fullTitle": "login \"after each\" hook: finalize codeceptjs in \"login\"",
+              "timedOut": false,
+              "duration": 818,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "teardown(suite)",
+              "err": {},
+              "uuid": "9eca4c7d-a3ff-4a11-a09d-67c9f9c6d9ed",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login Com Sucesso",
+              "fullTitle": "login: Login Com Sucesso",
+              "timedOut": false,
+              "duration": 33784,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "}) => {\n    loginPage.logarSistema('lihong1376@uorak.com', 'Dodo@940808')\n    I.wait(5)\n    I.waitForText('Success 01');",
+              "err": {
+                "message": "Error: element (//*) is not in DOM or there is no element(//*) with text \"Success 01\" after 1 sec",
+                "estack": "Error: element (//*) is not in DOM or there is no element(//*) with text \"Success 01\" after 1 sec\n    at file:///home/usuario/projeto/node_modules/webdriverio/build/commands/browser/waitUntil.js:39:23\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Browser.wrapCommandFn (file:///home/usuario/projeto/node_modules/@wdio/utils/build/shim.js:72:29)",
+                "diff": null
+              },
+              "uuid": "67d838fc-d0e6-4562-91fd-d34dc020297c",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Com Email Invalido",
+              "fullTitle": "login: Login Com Email Invalido",
+              "timedOut": false,
+              "duration": 37269,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "}) => {\n    loginPage.logarSistema('texto', 'Dodo@940808')\n    I.waitForText('Please enter a valid email address')",
+              "err": {},
+              "uuid": "80dca3b3-b089-4bb1-aa27-83eeecf1151f",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Com Senha Invalido",
+              "fullTitle": "login: Login Com Senha Invalido",
+              "timedOut": false,
+              "duration": 25803,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "}) => {\n    loginPage.logarSistema('lihong1376@uorak.com', 'dsf')\n    I.waitForText('Please enter at least 8 characters')",
+              "err": {},
+              "uuid": "fe3931e9-0852-4dce-96f9-7cd39a4a116a",
+              "parentUUID": "0087bc60-ed6c-4252-883a-91e65c8bfcd3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80dca3b3-b089-4bb1-aa27-83eeecf1151f",
+            "fe3931e9-0852-4dce-96f9-7cd39a4a116a"
+          ],
+          "failures": [
+            "67d838fc-d0e6-4562-91fd-d34dc020297c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 96856,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {},
+      "version": "6.3.0"
+    }
+  }
+}
