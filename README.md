@@ -7,7 +7,9 @@ Repositório para o Projeto OPAH do Banco Carrefour.
 O repositório contém:
 
 - Arquivos de configuração de teste (.conf, login_test.js, etc)
-
+  
+- O projeto está no padrão Page Objects
+  
 - Dependências em package.json e package-lock.json
 
 - Scripts de teste e arquivos relacionados (steps.d.ts, steps_file.js)
